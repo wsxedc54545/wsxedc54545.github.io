@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+#row {
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+.todo_cell {
+  position: relative;
+  background-color: yellowgreen;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: wrap;
+  overflow: scroll;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+}
+
+.todo_cell a {
+  text-decoration: none;
+}
+
+.todo_text {
+  margin: 15px;
+}
+
+.icon_check {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.icon_uncheck {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.todo_cell:hover {
+  border: 3px solid brown;
+  transform: scale(1.15);
+}
+
+.icon_check:hover {
+  transform: scale(1.5);
+  transition: 0.1s;
+}
+.icon_uncheck:hover {
+  transform: scale(1.5);
+  transition: 0.1s;
+}
